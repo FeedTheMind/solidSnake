@@ -1,0 +1,74 @@
+/***************
+General
+***************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 0;
+}
+
+body {
+  background: rgba(0, 0, 0, .7);
+  font-family: 'Gloria Hallelujah', Georgia, sans-serif;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.wrapper {
+  padding-top: 5px;
+}
+
+h1, 
+h3 {
+  text-align: center;
+  font-size: 3em;
+  color: #fff;
+  margin: 0;
+}
+
+.solidSnake {
+  cursor: pointer;
+}
+
+.gameOverWrapper {
+  display: none;
+  color: #fff;
+  position: absolute;
+  top: 150px;
+  background: rgba(0, 0, 0, .9);
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.gameOverWrapper a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.score {
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 200px) {
+  .gameOverWrapper {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .gameOverWrapper {
+    width: 50%;
+  }
+}
